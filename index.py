@@ -38,7 +38,7 @@ def print_hello_world():
 def wait_until_morning():
     now = datetime.now()
     tomorrow_morning = now.replace(
-        hour=18, minute=0, second=0, microsecond=0)
+        hour=18, minute=10, second=0, microsecond=0)
     # + timedelta(days=1)
     time_to_wait = (tomorrow_morning - now).total_seconds()
     print(time_to_wait)
